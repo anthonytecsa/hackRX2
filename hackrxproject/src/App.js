@@ -1,24 +1,49 @@
-import logo from './logo.svg';
 import './App.css';
+import PatientDashboard from './components/PatientDashboard';
+import PatientProfile from './components/PatientProfile';
+import PrescriptionScanner from './components/PatientScan';
+import SignIn from './components/SignInPage';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <Routes>
+          {/* Default Route */}
+          <Route path="/" element={<Navigate to="/signin" />} />
+
+          {/* Public Route */}
+          <Route path="/signin" element={<SignIn />} />
+
+          {/* Protected Routes */}
+          <Route
+            path="/patientHome"
+            element={
+              <PrivateRoute>
+                <PatientDashboard />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/patientProfile"
+            element={
+              <PrivateRoute>
+                <PatientProfile />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/scan"
+            element={
+              <PrivateRoute>
+                <PrescriptionScanner />
+              </PrivateRoute>
+            }
+          />
+        </Routes>
+      </Router>
   );
 }
 
