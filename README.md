@@ -1,6 +1,6 @@
 # CareRX Pharmacy App
 
-The **Prescription Scanner App** is a React-based web application that helps users manage their prescriptions, interact with healthcare providers, and scan new prescriptions using a camera or uploaded images. This app supports patient and pharmacist roles, offering tailored functionality for each.
+A React-based web application that helps users manage their drug prescriptions, interact with healthcare providers, and scan new prescriptions using a camera or uploaded images. This app supports patient and pharmacist roles, offering tailored functionality for each.
 
 ---
 
