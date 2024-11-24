@@ -7,7 +7,7 @@ const Camera = ({ onCapture }) => {
 
   const captureImage = () => {
     const imageSrc = webcamRef.current.getScreenshot();
-    onCapture(imageSrc); // Pass the captured image to parent component
+    onCapture(imageSrc); 
   };
 
   return (
@@ -18,8 +18,23 @@ const Camera = ({ onCapture }) => {
         screenshotFormat="image/jpeg"
         width="100%"
       />
-      <button onClick={captureImage} style={{ marginTop: "10px" }}>
-        Capture
+      <button
+        onClick={captureImage}
+        style={{
+          marginTop: "10px",
+          padding: "10px 20px",
+          backgroundColor: "#008080", 
+          color: "white", // Text color
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          fontSize: "16px",
+          fontStyle: "normal",
+          fontWeight: "400",
+          lineHeight: "normal",
+        }}
+      >
+        Capture Prescription
       </button>
     </div>
   );

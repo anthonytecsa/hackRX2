@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
 
 html, body, #root {
   height: 100%;
@@ -9,9 +10,21 @@ html, body, #root {
 }
 
 /* container for entire page */
-.sign-in-page {
+
+
+.userid {
+  color: #487626;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.main-page {
   display: flex;
-  background-color: rgb(232, 232, 232);
+  background-color: white;
   background-size: 100%;
   justify-content: center;
   align-items: center;
@@ -20,29 +33,187 @@ html, body, #root {
   overflow: auto;
 }
 
-/* sign-in-page container */
-.sign-in-container {
+.phone-container {
   border: 2px solid;
-  padding: 20px;
-  width: 40%;
-  height: 330px;
+  border-radius: 10px;
+  width: 390px;
+  height: 844px;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
   display: flex;
   flex-direction: column; /* Ensure content is aligned vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
   background-color: white;
 }
 
-.form-group {
-  display: flex;
-  gap: 8px;
-  flex-direction: column;
-  margin: 15px 0  ;
+.create-acc {
+  width: 478px;
+  color: #487626;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
+.back-button {
+  background: none;
+  border: none;
+  color: #487626;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+  margin-left: 10px; /* Space between the back button and the logo */
+  align-self: flex-start; /* Align to the left */
+  margin-bottom: 0px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 303px;
+  height: 357px;
+  flex-shrink: 0;
+  border-radius: 22px;
+  background: #487626;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+/* logo styling */
+.logo {
+  width: 280px;
+  height: 273px;
+}
+
+.logo-pre {
+  margin-top: 50px;
+  width: 320px;
+  height: 335px;
+  flex-shrink: 0;
+}
+
+.slogan {
+  color: #487626;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.sign-in-text {
+  color: #487626;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.user-type-button {
+  border-radius: 36px;
+  background: #FFA422;
+  width: 134px;
+  height: 45px;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.forgor {
+  margin-bottom: 0px; /* Adjust spacing above and below */
+  width: 236px;
+  height: 51px;
+  color: #F5F5F5;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.login-button {
+  margin-top: 0px;
+  width: 263px;
+  height: 61px;
+  border-radius: 36px;
+  color: #FFF;
+  background: #FFA422;
+  text-align: center;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #C18023;
+}
+
+.user-type-button:hover {
+  background-color: #C18023;
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column; /* Stack label and input */
+  gap: 5px; /* Space between label and input */
+}
+
+/* Input and form group styles */
+.form-group input {
+  width: 267px;
+  height: 52px;
+  border-radius: 22px;
+  background: #F5F5F5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  border: none; /* Remove default border */
+  padding: 10px; /* Add padding for better readability */
+  font-size: 16px; /* Optional: Adjust text size */
+  box-sizing: border-box; /* Ensure padding doesn't affect width/height */
+}
+
+/* Label styling (optional improvement) */
 .form-group label {
-  margin-bottom: 5px;
-  font-weight: bold;
+  color: #F5F5F5;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
 }
 
 input, textarea {
@@ -57,71 +228,6 @@ input, textarea {
 
 textarea {
   height: 180px;
-}
-
-.whisper-button {
-  height: 50px;
-  width: 110px;
-  padding: 10px;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 30px;
-  font-size: 16px;
-  background-color: black;
-}
-
-/* Text */
-
-/* General label styling to ensure all labels are bold */
-label {
-  font-weight: bold;
-}
-
-.required-text {
-  color: red; 
-  font-size: 12px;
-  margin-left: 8px;
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
-
-}
-
-.optional-text {
-  color: gray;
-  font-weight: normal;
-  font-style: italic; 
-  font-size: 12px;
-  margin-left: 10px;
-  position: relative;
-  vertical-align: middle; 
-  top: -2px;
-}
-
-
-/* disclaimer */
-
-/* Disclaimer container to align checkbox and text */
-.disclaimer-container {
-  width: 90%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-/* Styling the checkbox */
-.disclaimer-checkbox {
-  width: 20px;
-  margin-right: 15px;
-}
-
-/* Styling the terms of use text */
-.disclaimer-text {
-  margin: 10px;
-  color: #333; /* Adjust the text color */
-  font-weight: normal;
-  font-size: 12px;
 }
 
 
@@ -141,8 +247,319 @@ label {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
   text-align: center;
-  padding: 20px;
-  padding-bottom: 80px; /* Add padding equal to or greater than NavBar's height */
+  flex: 1; /* Allow the content div to take up the available space */
   box-sizing: border-box; /* Ensures padding doesn't affect the total width/height */
+}
+
+
+.ask-pharma {
+  color: #FFA422;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+div {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.welcome-logo {
+  width: 106px;
+  height: 110px;
+}
+
+.welcome-txt {
+  width: 243px;
+  height: 46px;
+  font-size: 34px;
+  font-weight: 800;
+  color: #487626;
+  text-align: left; /* Align text to the left */
+}
+
+.help-logo {
+  width: 120px;
+  height: 118px;
+  margin-right: 5px;
+}
+
+
+.help-txt {
+  width: 243px;
+  height: 46px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #ffffff;
+  margin-left: 25px;
+}
+
+.help-txt2 {
+  width: 205px;
+  height: 46px;
+  color: #FFF;
+  font-family: Inter;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  color: #ffffff;
+  margin-left: 0px;
+}
+
+.helpbuttontext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+}
+.helptexttitle {
+  color: #FFA422;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.helptext {
+  font-weight: 500;
+}
+
+
+.welcome-container {
+  display: flex; /* Use Flexbox to position items horizontally */
+  align-items: center; /* Vertically align text and logo */
+  justify-content: flex-start; /* Align both elements to the left */
+  gap: 0; /* Remove any gap between the items */
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.patient-page {
+  display: flex;
+  background-color: white;
+  background-size: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 100%; 
+  width: 100%;
+  overflow: auto;
+}
+
+.phone-container2 {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 390px;
+  height: 844px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  justify-content: flex-start; /* Content starts from the top */
+  align-items: center; /* Center all children horizontally */
+  background-color: white;
+  gap: 20px;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.prescription-txt {
+  color: white; /* White text */
+  font-weight: bold; /* Bold text */
+  font-size: 24px; /* Optional: Adjust font size */
+  text-align: center; /* Optional: Center align text */
+  margin: 10px 0; /* Optional: Add some spacing */
+}
+
+.prescription-txt:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  color: #FFD700; /* Change text color to gold on hover */
+}
+
+.phone-container4 {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 390px;
+  height: 844px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  justify-content: flex-start; /* Content starts from the top */
+  align-items: center; /* Center all children horizontally */
+  background-color: #487626;
+  gap: 20px;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.phone-container5 {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 390px;
+  height: 844px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  justify-content: flex-start; /* Content starts from the top */
+  align-items: center; /* Center all children horizontally */
+  background-color: #79B4B0;
+  gap: 20px;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+
+.phone-container3 {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 390px;
+  height: 844px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  justify-content: center; /* Content starts from the top */
+  align-items: center; /* Center all children horizontally */
+  background-color: #FFA422;
+  gap: 20px;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
+.nav-bar {
+  width: 100%;
+  height: 70px;
+  background-color: #487626;
+  display: flex;
+  justify-content: space-around; /* Space buttons evenly */
+  align-items: center; /* Vertically center buttons */
+  margin-top: auto; /* Push NavBar to the bottom */
+  border-top: 1px solid #ccc;
+}
+
+.nav-bar button {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack icon and text */
+  align-items: center;
+  justify-content: center; /* Center content inside buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-bar button:hover {
+  background-color: #356418; /* Dark green on hover */
+  border-radius: 5px; /* Optional: Slight rounding, but not enough to alter size */
+}
+
+.nav-bar button span {
+  font-size: 12px;
+  margin-top: 4px;
+  color: white;
+}
+
+.nav-bar button svg {
+  font-size: 30px;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around; /* Space buttons evenly */
+  align-items: center;
+  margin: 8px 0;
+  gap: 20px;
+}
+
+.custom-button {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 20px;
+  border: none;
+  background-color: #487626; /* Default green color */
+  color: #FFF;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+  align-items: flex-start; /* Align to the top */
+  padding: 18px; /* Add padding for spacing */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.custom-button:hover {
+  transform: scale(1.05);
+}
+
+.button-text {
+  display: flex;
+  flex-direction: column; /* Stack spans vertically */
+  align-items: flex-start; /* Align spans to the left */
+  justify-content: flex-end; /* Push spans to the bottom */
+  width: 100%;
+  height: 100%;
+}
+
+.button-text span {
+  margin: 0; /* Remove extra margin */
+}
+
+.history-button {
+  background-color: #487626; /* Green */
+}
+
+.help-button {
+  background-color: #f4a636; /* Orange */
+}
+
+.pharmabuttontext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+}
+.pharmatexttitle {
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.pharmatext {
+  font-weight: 500;
+  color:white;
 }
