@@ -452,6 +452,21 @@ div {
   overflow: hidden; /* Prevent content from spilling out */
 }
 
+.phone-container6 {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 390px;
+  height: 844px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Vertical layout */
+  justify-content: center; /* Content starts from the top */
+  align-items: center; /* Center all children horizontally */
+  background-color: #79B4B0;
+  gap: 20px;
+  overflow: hidden; /* Prevent content from spilling out */
+}
+
 .nav-bar {
   width: 100%;
   height: 70px;

@@ -16,19 +16,6 @@ const PrescriptionScanner = () => {
   const [success, setSuccess] = useState(false);
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (loading) {
-      const timeout = setTimeout(() => {
-        setLoading(false);
-        if (success) {
-          navigate("/patientHome");
-        }
-      }, 3000);
-
-      return () => clearTimeout(timeout); // Cleanup timeout on unmount
-    }
-  }, [loading, success, navigate]);
-
   const handleImageCapture = async (imageSrc) => {
     setLoading(true);
     try {
@@ -37,11 +24,11 @@ const PrescriptionScanner = () => {
 
       // Test prescription data
       const testPrescription = {
-        name: "Ibuprofen",
-        dosage: "200mg",
-        sideEffects: "Drowsiness, stomach upset",
-        instructions: "Take after meals",
-        timing: "Every 6 hours as needed",
+        name: "Metformin",
+        dosage: "500mg",
+        sideEffects: "Nausea, diarrhea, abdominal discomfort",
+        instructions: "Take with meals to reduce stomach upset",
+        timing: "Twice a day, morning and evening",
       };
 
       // Save the prescription to Firestore

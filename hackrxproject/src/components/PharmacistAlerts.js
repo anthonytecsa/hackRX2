@@ -28,7 +28,8 @@ const PharmacistAlerts = () => {
   };
 
   return (
-    
+    <div className="patient-page">
+    <div className="phone-container6">
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>Welcome, Pharmacist!</h1>
       <p>Manage prescriptions, patient data, and tickets here.</p>
@@ -44,6 +45,7 @@ const PharmacistAlerts = () => {
                 border: "1px solid #ccc",
                 borderRadius: "5px",
                 cursor: "pointer",
+                backgroundColor: "#008B8B"
               }}
               onClick={() =>
                 setExpandedTicket(
@@ -109,6 +111,8 @@ const PharmacistAlerts = () => {
           </div>
         ))}
       </div>
+    </div>
+    </div>
     </div>
   );
 };
